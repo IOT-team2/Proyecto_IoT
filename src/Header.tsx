@@ -1,8 +1,5 @@
-
-
-
 import React from "react";
-import logo from "/Users/miguelgomezcarmona/Desktop/IoT_SmartHouse/src/assets/logo.png";
+import logo from "../src/assets/logo.png";
 import "./Header.css";
 
 export const Header: React.FC = () => {
@@ -11,7 +8,6 @@ export const Header: React.FC = () => {
       <div className="w-100 bg-dark py-3">
         <div className="container">
           <div className="row align-items-center">
-
             {/* LOGO */}
             <div className="col-lg-3 col-md-4 col-sm-6 mb-3 mb-sm-0 d-flex align-items-center">
               <a href="/" className="d-flex align-items-center">
@@ -19,7 +15,7 @@ export const Header: React.FC = () => {
                   src={logo}
                   alt="Logo Smart House"
                   className="img-fluid header-logo"
-                  style={{ height: 80, width: "auto" }} 
+                  style={{ height: 80, width: "auto" }}
                 />
               </a>
             </div>
@@ -43,7 +39,6 @@ export const Header: React.FC = () => {
                 </a>
               </nav>
             </div>
-
           </div>
         </div>
       </div>
@@ -52,4 +47,3 @@ export const Header: React.FC = () => {
 };
 
 export default Header;
-
