@@ -1,0 +1,53 @@
+
+/* ===== LOGO ===== */
+.header-logo {
+  height: 48px;      /* Ajusta el tamaño del logo */
+  width: auto;
+  object-fit: contain;
+}
+
+/* ===== NAVBAR ENLACES ===== */
+.header-nav a {
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.25s ease-in-out;
+}
+
+/* Hover estilo teal */
+.header-nav a:hover {
+  color: #20e5b9;
+}
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
+header {
+  width: 100%;
+}
+
+/* Fondo oscuro */
+.bg-dark {
+  background-color: #000 !important;
+}
+
+/* Espaciado vertical */
+header .py-3 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+/* Para alinear el contenido verticalmente */
+header .row {
+  align-items: center;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 576px) {
+  .header-logo {
+    height: 40px;
+  }
+
+  .header-nav a {
+    font-size: 0.9rem;
+  }
+}
