@@ -34,7 +34,6 @@ import Login from "./Login.tsx";
 import Register from "./Register.tsx";
 import User from "./User.tsx";
 import Grid from "./Grid.tsx";
-import MqttComp from "./MQTTComponent.tsx";
 
 // SENSORES (aquí agregas tus SensorPage_XXXX.tsx)
 import SensorPage_Temperatura from "./SensorPage_Temperatura.tsx";

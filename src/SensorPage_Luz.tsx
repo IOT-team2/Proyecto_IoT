@@ -1,7 +1,4 @@
-import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
-
-import lightIcon from "/Users/miguelgomezcarmona/Desktop/IoT_SmartHouse/src/assets/lightSensor.png";
 
 import {
   Chart as ChartJS,
@@ -15,7 +12,14 @@ import {
 import { Line } from "react-chartjs-2";
 
 // Registrar Chart.js
-ChartJS.register(LineElement, PointElement, LinearScale, CategoryScale, Tooltip, Legend);
+ChartJS.register(
+  LineElement,
+  PointElement,
+  LinearScale,
+  CategoryScale,
+  Tooltip,
+  Legend
+);
 
 export default function SensorPage_Luz() {
   // 💡 Valores de ejemplo (después se conectan a MQTT)
@@ -24,15 +28,12 @@ export default function SensorPage_Luz() {
 
   return (
     <div className="container mt-5">
-
       {/* CARD PRINCIPAL */}
       <div className="card shadow-lg p-4">
         <div className="row">
-
           {/* Imagen */}
           <div className="col-md-4 d-flex justify-content-center align-items-center">
             <img
-              src={lightIcon}
               alt="Luz"
               style={{ width: "150px", height: "150px", objectFit: "contain" }}
             />
@@ -54,9 +55,14 @@ export default function SensorPage_Luz() {
             </p>
 
             {/* Barra de interpretación */}
-            <p className="fs-5"><strong>Interpretación:</strong></p>
+            <p className="fs-5">
+              <strong>Interpretación:</strong>
+            </p>
 
-            <div className="progress" style={{ height: "25px", fontSize: "14px" }}>
+            <div
+              className="progress"
+              style={{ height: "25px", fontSize: "14px" }}
+            >
               <div
                 className="progress-bar bg-warning"
                 role="progressbar"
@@ -65,7 +71,6 @@ export default function SensorPage_Luz() {
                 {currentValue}%
               </div>
             </div>
-
           </div>
         </div>
       </div>
@@ -96,7 +101,6 @@ export default function SensorPage_Luz() {
           />
         </div>
       </div>
-
     </div>
   );
 }

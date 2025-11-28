@@ -1,6 +1,3 @@
-
-
-
 // interface PropsForTheCard {
 //   cardTitle: string;
 //   descriptionText: string;
@@ -46,8 +43,6 @@
 
 // export default SensorCard;
 
-
-import React from "react";
 import { Link } from "react-router-dom";
 
 interface PropsForTheCard {
@@ -56,7 +51,6 @@ interface PropsForTheCard {
   value: string;
   imageURL: string;
   linkButton: string;
-  imgSize: number;   // ⬅ control del tamaño
 }
 
 const SensorCard = ({
@@ -65,20 +59,17 @@ const SensorCard = ({
   value,
   imageURL,
   linkButton,
-  imgSize
 }: PropsForTheCard) => {
   return (
     <div className="card text-center p-3">
-
       {/* Imagen con tamaño controlado */}
       <img
         src={imageURL}
         alt="sensor"
         className="mx-auto d-block"
         style={{
-          height: imgSize,
           width: "auto",
-          objectFit: "contain"
+          objectFit: "contain",
         }}
       />
 
@@ -93,7 +84,6 @@ const SensorCard = ({
           More details
         </Link>
       </div>
-
     </div>
   );
 };
