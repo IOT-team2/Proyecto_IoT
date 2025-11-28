@@ -44,6 +44,7 @@ import Grid from "./Grid.tsx";
 
 // SENSORES (aquí agregas tus SensorPage_XXXX.tsx)
 import SensorPage_Temperatura from "./SensorPage_Temperatura.tsx";
+import SensorPage_Luz from "./SensorPage_Luz.tsx";
 
 import "bootstrap/dist/css/bootstrap.css";
 
@@ -63,6 +64,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 
         {/* SENSOR TEMPERATURA */}
         <Route path="/sensor/temperatura" element={<SensorPage_Temperatura />} />
+        <Route path="/sensor/luz" element={<SensorPage_Luz />} />
 
       </Routes>
     </BrowserRouter>
