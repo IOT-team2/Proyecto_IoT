@@ -1,11 +1,22 @@
 import SensorCard from "./SensorCard";
+<<<<<<< HEAD
 import thermoIcon from "../src/assets/thermoIcon.png";
 import distanceIcon from "../src/assets/DistanceSensor.jpg";
+=======
+import thermoIcon from "/Users/miguelgomezcarmona/Desktop/IoT_SmartHouse/src/assets/thermoIcon.png";
+import distanceIcon from "/Users/miguelgomezcarmona/Desktop/IoT_SmartHouse/src/assets/DistanceSensor.jpg";
+import lightIcon from "/Users/miguelgomezcarmona/Desktop/IoT_SmartHouse/src/assets/lightSensor.png";
+import lluviaIcon from "/Users/miguelgomezcarmona/Desktop/IoT_SmartHouse/src/assets/lluviaImage.jpg";
+import OledIcon from "/Users/miguelgomezcarmona/Desktop/IoT_SmartHouse/src/assets/OledImage.jpg";
+import servoIcon from "/Users/miguelgomezcarmona/Desktop/IoT_SmartHouse/src/assets/ServoImage.png";
+
+>>>>>>> refs/remotes/origin/main
 
 export default function Grid() {
   return (
     <div className="container mt-4">
       <div className="row g-4">
+        
         <div className="col-md-4">
           <SensorCard
             cardTitle="Temperatura"
@@ -13,6 +24,7 @@ export default function Grid() {
             value="25°C"
             imageURL={thermoIcon}
             linkButton="/sensor/temperatura"
+<<<<<<< HEAD
           />
         </div>
         <div className="col-md-4">
@@ -22,18 +34,85 @@ export default function Grid() {
             value="60%"
             imageURL="..."
             linkButton="/sensor/humedad"
+=======
+            imgSize={110}     // ⬅ control del tamaño
+>>>>>>> refs/remotes/origin/main
           />
         </div>
 
         <div className="col-md-4">
           <SensorCard
-            cardTitle="Distancia"
+            cardTitle="Luz"
+            descriptionText="Valor"
+            value="60%"
+            imageURL={lightIcon}
+            linkButton="/sensor/humedad"
+            imgSize={110}    // ⬅ otro tamaño
+          />
+        </div>
+
+        <div className="col-md-4">
+          <SensorCard
+            cardTitle="Distancia 1"
             descriptionText="Valor"
             value="153 cm"
             imageURL={distanceIcon}
             linkButton="/sensor/distancia"
+            imgSize={110}
           />
         </div>
+        <div className="col-md-4">
+          <SensorCard
+            cardTitle="Distancia 2"
+            descriptionText="Valor"
+            value="153 cm"
+            imageURL={distanceIcon}
+            linkButton="/sensor/distancia"
+            imgSize={110}
+          />
+        </div>
+        
+        <div className="col-md-4">
+          <SensorCard
+            cardTitle="Lluvia"
+            descriptionText="Valor"
+            value="154"
+            imageURL={lluviaIcon}
+            linkButton="/sensor/distancia"
+            imgSize={110}
+          />
+        </div>
+        <div className="col-md-4">
+          <SensorCard
+            cardTitle="Display"
+            descriptionText="showing"
+            value="154"
+            imageURL={OledIcon}
+            linkButton="/sensor/distancia"
+            imgSize={110}
+          />
+        </div>
+         <div className="col-md-4">
+          <SensorCard
+            cardTitle="Servo 2"
+            descriptionText="showing"
+            value="154"
+            imageURL={servoIcon}
+            linkButton="/sensor/distancia"
+            imgSize={110}
+          />
+        </div>
+        <div className="col-md-4">
+          <SensorCard
+            cardTitle="Servo 2"
+            descriptionText="showing"
+            value="154"
+            imageURL={servoIcon}
+            linkButton="/sensor/distancia"
+            imgSize={110}
+          />
+        </div>
+
       </div>
     </div>
   );
