@@ -1,4 +1,4 @@
-import Grid from "./Home"; // o ./Grid si tu componente se llama Grid
+import Grid from "./Home";
 
 export default function App() {
   return <Grid />;

@@ -33,7 +33,7 @@ export default function Home() {
             backdropFilter: "blur(4px)",
           }}
         >
-          <h1 className="text-center mb-3">Bienvenido</h1>
+          <h1 className="text-center mb-3">WELCOME!</h1>
           <p className="text-center fs-5">
             Esta es la sección Hero. Somos el equipo numero 2 haciendo el front
             end con una mezcla de Bootstrap y React. La imagen se puede cambiar
