@@ -28,7 +28,7 @@ export const Header: React.FC = () => {
                 <Link to="/user" className="header-link">
                   Settings
                 </Link>
-                <Link to="/user" className="header-link">
+                <Link to="/stats" className="header-link">
                   Stats
                 </Link>
                 <Link to="/user" className="header-link">

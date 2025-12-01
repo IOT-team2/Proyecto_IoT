@@ -1,6 +1,3 @@
-
-
-
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -20,25 +17,24 @@ export default function Register() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
   const handleSubmit = (e: React.FormEvent) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  // Guarda al usuario actual (perfil)
-  localStorage.setItem("userProfile", JSON.stringify(form));
+    //store user
+    localStorage.setItem("userProfile", JSON.stringify(form));
 
-  console.log("Usuario guardado en User.tsx:", form);
+    console.log("Usuario guardado en User.tsx:", form);
 
-  navigate("/user"); // ← te va a mandar a User.tsx
+    navigate("/user");
   };
-
 
   return (
     <div className="container mt-5" style={{ maxWidth: "600px" }}>
-      <h2 className="mb-4 text-center">Crear cuenta</h2>
+      <h2 className="mb-4 text-center">Create Account</h2>
 
       <div className="card shadow p-4">
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
-            <label className="form-label">Nombre</label>
+            <label className="form-label">Name</label>
             <input
               type="text"
               name="nombre"
@@ -50,7 +46,7 @@ export default function Register() {
           </div>
 
           <div className="mb-3">
-            <label className="form-label">Apellido</label>
+            <label className="form-label">Surname</label>
             <input
               type="text"
               name="apellido"
@@ -62,7 +58,7 @@ export default function Register() {
           </div>
 
           <div className="mb-3">
-            <label className="form-label">Edad</label>
+            <label className="form-label">Age</label>
             <input
               type="number"
               name="edad"
@@ -74,7 +70,7 @@ export default function Register() {
           </div>
 
           <div className="mb-3">
-            <label className="form-label">Carrera</label>
+            <label className="form-label">Major</label>
             <input
               type="text"
               name="carrera"
@@ -86,7 +82,7 @@ export default function Register() {
           </div>
 
           <div className="mb-3">
-            <label className="form-label">Nombre de usuario</label>
+            <label className="form-label">Username</label>
             <input
               type="text"
               name="usuario"
@@ -98,7 +94,7 @@ export default function Register() {
           </div>
 
           <div className="mb-4">
-            <label className="form-label">Contraseña</label>
+            <label className="form-label">Password</label>
             <input
               type="password"
               name="password"
@@ -110,7 +106,7 @@ export default function Register() {
           </div>
 
           <button className="btn btn-primary w-100" type="submit">
-            Crear cuenta
+            Create Account
           </button>
         </form>
       </div>

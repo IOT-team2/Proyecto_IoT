@@ -1,9 +1,6 @@
-import Grid from "./components/Grid";
-
 export default function Home() {
   return (
     <>
-      {/* Hero Section (TAL CUAL ME LA DISTE, SIN CAMBIOS) */}
       <section
         style={{
           width: "100%",
@@ -29,36 +26,11 @@ export default function Home() {
             backdropFilter: "blur(4px)",
           }}
         >
-          <h1 className="text-center mb-3">WELCOME!</h1>
+          <h1 className="text-center mb-3">WELCOME TO YOUR SMART HOUSE!</h1>
           <p className="text-center fs-5">
-            Esta es la sección Hero. Somos el equipo numero 2 haciendo el front
-            end con una mezcla de Bootstrap y React. La imagen se puede cambiar
-            mas tarde
+            Experience your house like never before
           </p>
         </div>
-      </section>
-
-      {/* title section */}
-      <section className="container mt-5">
-        <div
-          className="p-5 rounded shadow text-white"
-          style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1557682250-33bd709cbe85')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <h1 className="display-5 fw-bold">Sensor display</h1>
-          <p className="lead">
-            See the performace of the sensors in real time.
-          </p>
-        </div>
-      </section>
-
-      {/* GRID SECTION */}
-      <section className="mt-5">
-        <Grid />
       </section>
     </>
   );
