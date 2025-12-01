@@ -27,7 +27,7 @@ export default function Login() {
 
     const userData = JSON.parse(savedUser);
 
-    // Validar credenciales
+    // Validate credentials
     if (
       form.usuario === userData.usuario &&
       form.password === userData.password
@@ -46,7 +46,7 @@ export default function Login() {
         <div className="card shadow p-4">
           <form onSubmit={handleSubmit}>
             <div className="mb-3">
-              <label className="form-label">Nombre de usuario</label>
+              <label className="form-label">Username</label>
               <input
                 type="text"
                 name="usuario"
@@ -58,7 +58,7 @@ export default function Login() {
             </div>
 
             <div className="mb-4">
-              <label className="form-label">Contraseña</label>
+              <label className="form-label">Password</label>
               <input
                 type="password"
                 name="password"
@@ -80,7 +80,7 @@ export default function Login() {
 
           <hr />
           <p className="text-center">
-            ¿No tienes cuenta? <a href="/register">Crear cuenta</a>
+            ¿Don´t have an account? <a href="/register">Create new account</a>
           </p>
         </div>
       </div>

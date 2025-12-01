@@ -18,7 +18,6 @@ const SensorCard = ({
 }: PropsForTheCard) => {
   return (
     <div className="card text-center p-3">
-      {/* Imagen con tamaño controlado */}
       <img
         src={imageURL}
         alt="sensor"
@@ -36,10 +35,8 @@ const SensorCard = ({
           {!children ? <strong>{value}</strong> : null}
         </p>
 
-        {/* If a child component is provided (e.g. MqttComp), render it here */}
         {children ? <div className="mt-2">{children}</div> : null}
 
-        {/* Botón con React Router */}
         <Link to={linkButton} className="btn btn-primary">
           More details
         </Link>

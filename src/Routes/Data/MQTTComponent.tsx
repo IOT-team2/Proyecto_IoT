@@ -20,7 +20,7 @@ function MqttComp({
   useEffect(() => {
     const topicName = path;
 
-    // create a unique client per component instance so topics/clients don't conflict
+    // create a unique client per instance
     const clientId = `${clientIdBase}-${Math.random()
       .toString(16)
       .slice(2, 8)}`;

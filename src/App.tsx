@@ -5,6 +5,7 @@ import Login from "./Routes/Login/Login.tsx";
 import Register from "./Routes/Register/Register.tsx";
 import User from "./Routes/User/User.tsx";
 import Header from "./components/Header.tsx";
+import Data from "./Routes/Data/Data.tsx";
 
 import "bootstrap/dist/css/bootstrap.css";
 
@@ -18,6 +19,7 @@ export default function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/register" element={<Register />} />
         <Route path="/user" element={<User />} />
+        <Route path="/stats" element={<Data />} />
       </Routes>
     </>
   );
